@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_cid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER CUSTOMER ID"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_cid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer's ID"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_cid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_tCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Table Capacity"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/et_cid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:id="@+id/btn_enter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        app:cornerRadius="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintTop_toBottomOf="@id/et_tCapacity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

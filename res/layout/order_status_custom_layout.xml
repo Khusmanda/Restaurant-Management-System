@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chef ID : "
+        android:id="@+id/ftv_chef"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="25sp"
+        android:id="@+id/tv_chef"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_chef"
+        app:layout_constraintLeft_toRightOf="@id/ftv_chef"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer ID : "
+        android:id="@+id/ftv_customer"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ftv_chef"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="25sp"
+        android:id="@+id/tv_customer"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_customer"
+        app:layout_constraintLeft_toRightOf="@id/ftv_customer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : "
+        android:id="@+id/ftv_status"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ftv_customer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDK"
+        android:textSize="25sp"
+        android:id="@+id/tv_statusOS"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_status"
+        app:layout_constraintLeft_toRightOf="@id/ftv_status"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:visibility="gone"
+        android:id="@+id/btnMarkAsServed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark As Served"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_statusOS"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btnMarkAsServed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

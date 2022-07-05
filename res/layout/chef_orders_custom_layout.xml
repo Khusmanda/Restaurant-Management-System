@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/ftv_mName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Name : "
+        android:textStyle="bold"
+        android:textSize="27sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_mNameCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_mName"
+        app:layout_constraintLeft_toRightOf="@id/ftv_mName"/>
+
+    <TextView
+        android:id="@+id/ftv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity : "
+        android:textStyle="bold"
+        android:textSize="27sp"
+        app:layout_constraintTop_toBottomOf="@id/ftv_mName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_mQuantityCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_quantity"
+        app:layout_constraintLeft_toRightOf="@id/ftv_quantity"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layout_marginRight="10dp"
+        android:id="@+id/updateStatusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark As Prepared"
+        app:layout_constraintTop_toBottomOf="@id/ftv_quantity"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/updateStatusBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

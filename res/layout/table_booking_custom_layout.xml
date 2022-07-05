@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvTableNoTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table No : "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvTableNoTag"
+        android:id="@+id/tvTableNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvTableNoTag"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftvCustomerID"
+        android:text="Customer ID : "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTableNoTag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/ftvCustomerID"
+        android:id="@+id/tvCustomerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CID"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftvCustomerID"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftvCapacity"
+        android:text="Capacity : "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ftvCustomerID"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/ftvCustomerID"
+        android:id="@+id/tvCapacityTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftvCapacity"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layout_marginRight="10dp"
+        android:id="@+id/acceptBooking_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Booking"
+        app:layout_constraintTop_toBottomOf="@id/ftvCapacity"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layout_marginRight="10dp"
+        android:id="@+id/denyBooking_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deny Booking"
+        app:layout_constraintRight_toLeftOf="@id/acceptBooking_btn"
+        app:layout_constraintBaseline_toBaselineOf="@id/acceptBooking_btn"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/acceptBooking_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

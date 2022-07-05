@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/ftv_menuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Name : "
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:id="@+id/tv_menuName"
+        app:layout_constraintLeft_toRightOf="@id/ftv_menuName"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_menuName"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/ftv_menuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Price : "
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ftv_menuName"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:id="@+id/tv_menuPrice"
+        app:layout_constraintLeft_toRightOf="@id/ftv_menuPrice"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_menuPrice"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/ftv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity : "
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ftv_menuPrice"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/tv_quantity"
+        app:layout_constraintLeft_toRightOf="@id/ftv_quantity"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_quantity"
+        android:textSize="25sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ftv_quantity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

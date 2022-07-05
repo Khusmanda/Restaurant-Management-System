@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_c"
+    tools:context=".customer.CustomerDashboard">
+
+    <TextView
+        android:id="@+id/tv_occupancy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Current Occupance : 0%"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_BookAtable"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:text="Book A Table"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintTop_toBottomOf="@id/tv_occupancy" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Food Menu"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintTop_toBottomOf="@id/btn_BookAtable" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Logout"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintTop_toBottomOf="@id/btn_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

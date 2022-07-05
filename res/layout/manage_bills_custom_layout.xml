@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/ftv_customerTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer ID : "
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_customerMB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_customerTag"
+        app:layout_constraintLeft_toRightOf="@id/ftv_customerTag"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/ftv_foodsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foods : "
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ftv_customerTag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_foods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_foodsTag"
+        app:layout_constraintLeft_toRightOf="@id/ftv_foodsTag"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/ftv_DrinksTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drinks : "
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ftv_foodsTag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_drinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_DrinksTag"
+        app:layout_constraintLeft_toRightOf="@id/ftv_DrinksTag"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:id="@+id/ftv_TotalTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total : "
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ftv_DrinksTag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftv_TotalTag"
+        app:layout_constraintLeft_toRightOf="@id/ftv_TotalTag"
+        android:layout_marginLeft="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:id="@+id/btnMarkAsPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark As Paid"
+        app:layout_constraintLeft_toRightOf="@id/tv_total"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_total"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btnMarkAsPaid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
